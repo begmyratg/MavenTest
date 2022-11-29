@@ -2,11 +2,11 @@ package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
@@ -21,7 +21,7 @@ public abstract class TestBase {
 //        WebDriverManager.chromedriver().setup();
 //    }
 
-    @Before
+    @BeforeClass
     public void setUpMethod(){
     driver=Driver.getDriver();
     actions= new Actions(driver);
@@ -30,7 +30,7 @@ public abstract class TestBase {
   //  softAssert=new SoftAssert();
     }
 
-    @After
+    @AfterClass
     public void tearDownMethod() throws InterruptedException {
        Thread.sleep(3000);
        Driver.closeDriver();

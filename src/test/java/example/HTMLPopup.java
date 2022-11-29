@@ -2,30 +2,30 @@ package example;
 
 import java.time.Duration;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HTMLPopup {
 	WebDriver driver;
 
-	@Before
+	@BeforeClass
 	public void setUp() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		WebDriverManager.edgedriver().setup();
+		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
-	@After
+	@AfterClass
 	public void leanUp() throws InterruptedException {
 		Thread.sleep(5000);
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@Test

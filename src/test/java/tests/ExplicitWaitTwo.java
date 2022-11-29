@@ -2,11 +2,12 @@ package tests;
 
 import java.time.Duration;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import utilities.Driver;
 
@@ -37,6 +38,6 @@ public class ExplicitWaitTwo {
 		wait.until(ExpectedConditions.invisibilityOf(Driver.getDriver().findElement(By.xpath("//*[.='Loading... ']"))));
 		
 		System.out.println(text.getText());
-		//Assert.assertTrue(text.isDisplayed());
+		Assert.assertTrue(text.isDisplayed());
 	}
 }

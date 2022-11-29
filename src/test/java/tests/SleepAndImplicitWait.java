@@ -1,9 +1,9 @@
 package tests;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import utilities.Driver;
 
@@ -11,12 +11,12 @@ public class SleepAndImplicitWait {
 
 	WebDriver driver;
 	
-	@Before
+	@BeforeClass
 	public void setUp() {
 		driver=Driver.getDriver();
 	}
 	
-	@After
+	@AfterClass
 	public void tearDown() {
 		Driver.closeDriver();
 	}

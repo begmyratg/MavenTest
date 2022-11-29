@@ -3,17 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="example.TabsExample"/>
-      <class name="tests.FileUploadTest"/>
-      <class name="example.FileExistsTest"/>
-      <class name="tests.ScrollTest"/>
-      <class name="tests.SleepAndImplicitWait"/>
-      <class name="example.JSAlerts"/>
-      <class name="tests.HoverTest"/>
-      <class name="tests.ExplicitWaitExample"/>
-      <class name="tests.DragAndDrop"/>
-      <class name="tests.ExplicitWaitTwo"/>
-      <class name="tests.WebTablesExample"/>
       <class name="amazon.Test1"/>
       <class name="example.HTMLPopup"/>
       <class name="tests.virifyTextDisappearTest"/>

@@ -1,8 +1,9 @@
 package tests;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import utilities.TestBase;
 
@@ -20,7 +21,7 @@ public class FileUploadTest extends TestBase {
 		//clicking the download's locator
 		driver.findElement(By.id("file-submit")).click();
 		//verifying we did upload
-		//aAssert.assertTrue(driver.findElement(By.xpath("//h3[.='File Uploaded!']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//h3[.='File Uploaded!']")).isDisplayed());
 	}
 
 }

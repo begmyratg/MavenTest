@@ -1,7 +1,7 @@
 package tests;
 
-import org.junit.Test;
 import org.openqa.selenium.Keys;
+import org.testng.annotations.Test;
 
 import utilities.TestBase;
 

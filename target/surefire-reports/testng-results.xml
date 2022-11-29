@@ -1,11 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-29T10:12:24 CST" name="Suite" finished-at="2022-11-29T10:12:24 CST" duration-ms="12">
+  <suite started-at="2022-11-29T14:48:50 CST" name="Suite" finished-at="2022-11-29T14:50:42 CST" duration-ms="111764">
     <groups>
     </groups>
-    <test started-at="2022-11-29T10:12:24 CST" name="Test" finished-at="2022-11-29T10:12:24 CST" duration-ms="12">
+    <test started-at="2022-11-29T14:48:50 CST" name="Test" finished-at="2022-11-29T14:50:42 CST" duration-ms="111764">
+      <class name="example.HTMLPopup">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:example.HTMLPopup@1e0b4072]" started-at="2022-11-29T14:49:31 CST" name="setUp" finished-at="2022-11-29T14:49:36 CST" duration-ms="4806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="oppsTest()[pri:0, instance:example.HTMLPopup@1e0b4072]" started-at="2022-11-29T14:49:36 CST" name="oppsTest" finished-at="2022-11-29T14:49:50 CST" duration-ms="13669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oppsTest -->
+        <test-method signature="test1()[pri:0, instance:example.HTMLPopup@1e0b4072]" started-at="2022-11-29T14:49:50 CST" name="test1" finished-at="2022-11-29T14:49:55 CST" duration-ms="5131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="leanUp()[pri:0, instance:example.HTMLPopup@1e0b4072]" started-at="2022-11-29T14:49:55 CST" name="leanUp" finished-at="2022-11-29T14:50:01 CST" duration-ms="6272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leanUp -->
+      </class> <!-- example.HTMLPopup -->
+      <class name="amazon.Test1">
+        <test-method is-config="true" signature="before()[pri:0, instance:amazon.Test1@7b36aa0c]" started-at="2022-11-29T14:48:50 CST" name="before" finished-at="2022-11-29T14:49:21 CST" duration-ms="31296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="searchBarTestClick()[pri:0, instance:amazon.Test1@7b36aa0c]" started-at="2022-11-29T14:49:22 CST" name="searchBarTestClick" finished-at="2022-11-29T14:49:25 CST" duration-ms="3912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBarTestClick -->
+        <test-method signature="searchBarTestEnter()[pri:0, instance:amazon.Test1@7b36aa0c]" started-at="2022-11-29T14:49:25 CST" name="searchBarTestEnter" finished-at="2022-11-29T14:49:27 CST" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBarTestEnter -->
+        <test-method is-config="true" signature="after()[pri:0, instance:amazon.Test1@7b36aa0c]" started-at="2022-11-29T14:49:27 CST" name="after" finished-at="2022-11-29T14:49:31 CST" duration-ms="4323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- amazon.Test1 -->
+      <class name="tests.virifyTextDisappearTest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:tests.virifyTextDisappearTest@791f145a]" started-at="2022-11-29T14:50:01 CST" name="setUpMethod" finished-at="2022-11-29T14:50:06 CST" duration-ms="4663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="verify1()[pri:0, instance:tests.virifyTextDisappearTest@791f145a]" started-at="2022-11-29T14:50:06 CST" name="verify1" finished-at="2022-11-29T14:50:27 CST" duration-ms="21066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify1 -->
+        <test-method signature="verify2()[pri:0, instance:tests.virifyTextDisappearTest@791f145a]" started-at="2022-11-29T14:50:27 CST" name="verify2" finished-at="2022-11-29T14:50:38 CST" duration-ms="10855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify2 -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:tests.virifyTextDisappearTest@791f145a]" started-at="2022-11-29T14:50:38 CST" name="tearDownMethod" finished-at="2022-11-29T14:50:42 CST" duration-ms="4284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- tests.virifyTextDisappearTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
