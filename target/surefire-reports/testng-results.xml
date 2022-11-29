@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-28T12:44:29 CST" name="Suite" finished-at="2022-11-28T12:44:40 CST" duration-ms="10735">
+  <suite started-at="2022-11-29T09:46:29 CST" name="Suite" finished-at="2022-11-29T09:46:29 CST" duration-ms="34">
     <groups>
     </groups>
-    <test started-at="2022-11-28T12:44:29 CST" name="Test" finished-at="2022-11-28T12:44:40 CST" duration-ms="10735">
-      <class name="tests.DragAndDrop">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:tests.DragAndDrop@82de64a]" started-at="2022-11-28T12:44:29 CST" name="setUpMethod" finished-at="2022-11-28T12:44:33 CST" duration-ms="3673" status="PASS">
+    <test started-at="2022-11-29T09:46:29 CST" name="Test" finished-at="2022-11-29T09:46:29 CST" duration-ms="34">
+      <class name="example.FileExistsTest">
+        <test-method signature="test()[pri:0, instance:example.FileExistsTest@6221a451]" started-at="2022-11-29T09:46:29 CST" name="test" finished-at="2022-11-29T09:46:29 CST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="dragAndDrop()[pri:0, instance:tests.DragAndDrop@82de64a]" started-at="2022-11-28T12:44:33 CST" name="dragAndDrop" finished-at="2022-11-28T12:44:36 CST" duration-ms="3773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dragAndDrop -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:tests.DragAndDrop@82de64a]" started-at="2022-11-28T12:44:36 CST" name="tearDownMethod" finished-at="2022-11-28T12:44:40 CST" duration-ms="3226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-      </class> <!-- tests.DragAndDrop -->
+        </test-method> <!-- test -->
+      </class> <!-- example.FileExistsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

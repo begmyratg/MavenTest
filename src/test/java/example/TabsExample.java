@@ -3,20 +3,20 @@ package example;
 import java.time.Duration;
 import java.util.Set;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TabsExample {
 	WebDriver driver;
 
-	@BeforeMethod
+	@Before
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -24,7 +24,7 @@ public class TabsExample {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
-	@AfterMethod
+	@After
 	public void leanUp() throws InterruptedException {
 		Thread.sleep(20000);
 		driver.quit();
@@ -57,7 +57,7 @@ public class TabsExample {
 	public void changeTab2() {
 		driver.get("https://www.w3schools.com/html/");
 
-		driver.findElement(By.linkText("Try it Yourself »")).click();
+		driver.findElement(By.linkText("Try it Yourself ï¿½")).click();
 		Set<String> list = driver.getWindowHandles();
 		System.out.println(list.size());
 		for (String handle : list) {

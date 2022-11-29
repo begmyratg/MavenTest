@@ -2,19 +2,19 @@ package amazon;
 
 import java.time.Duration;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class Test1 extends Locators {
 	WebDriver driver;
-	@BeforeClass
+	@Before
 	public void before() {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
@@ -36,7 +36,7 @@ public class Test1 extends Locators {
 	}
 
 
-	@AfterClass
+	@After
 	public void after() throws InterruptedException {
 		Thread.sleep(4000);
 		driver.close();
