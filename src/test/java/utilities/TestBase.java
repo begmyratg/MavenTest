@@ -14,7 +14,7 @@ import java.time.Duration;
 public abstract class TestBase {
   
    protected WebDriver driver;
-   protected SoftAssert softAssert;
+  // protected SoftAssert softAssert;
    protected Actions actions;
 
 //    @BeforeClass
@@ -28,7 +28,7 @@ public abstract class TestBase {
     actions= new Actions(driver);
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     driver.manage().window().maximize();
-    softAssert=new SoftAssert();
+  //  softAssert=new SoftAssert();
     }
 
     @After
