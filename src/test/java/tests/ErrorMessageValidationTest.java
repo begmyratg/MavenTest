@@ -1,9 +1,9 @@
 package tests;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.PrestashopHomePage;

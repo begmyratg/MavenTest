@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.ErrorMessageValidationTest"/>
       <class name="example.TabsExample"/>
       <class name="tests.FileUploadTest"/>
       <class name="example.FileExistsTest"/>
